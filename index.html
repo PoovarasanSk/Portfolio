@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <div class="container-fluid m-0 p-0" id="top">
+        <!-- nav -->
+        <nav class="navbar  navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <img src="img/profile_2.jpg" class="navbar-brand rounded-circle" width="60" height="" alt="">
+                <div id="text">
+                    <span id="title">
+                        Poovarasan Sk
+                    </span><br>
+                    <span id="role">
+                        Web Developer
+                    </span>
+                </div>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">ABOUT ME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">SKILLS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#achievement">ACHIEVEMENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <script>
+            var navLinks = document.querySelectorAll(".nav-link");
+
+            navLinks.forEach(function(link) {
+                link.addEventListener("click", function() {
+                navLinks.forEach(function(link) {
+                    link.classList.remove("active");
+                });
+                this.classList.add("active");
+                });
+            });
+</script>
+
+        </script>
+        <!--end nav -->
+
+        <!-- carousel -->
+        <div class="row" id="home">
+            <div class="col-12" >
+                <div id="slide">
+                    <p>I am <span id="slide_text">Devloper</span></p>
+                    <p>I am <span id="slide_text">Freelancer</span></p>
+                    <p>I am <span id="slide_text">Artiest</span></p>
+                    <p>I am <span id="slide_text">Devloper</span></p>
+                </div>
+            </div>
+        </div>
+        <!--end carousel -->
+
+        <!-- About Me -->
+        <div id="about">
+            <h1 class="text-center pt-3"><span>About Me</span></h1>
+            <div id="box_about">
+                <div class="circle">
+                    <img src="img/DSC_0076-removebg-preview.png" alt="">
+                    <div class="content">
+                        <h1>About Me</h1>
+                        <p>
+                            <span><i class="bi bi-caret-right-fill"></i></span>
+                            <span>Birthday:</span>
+                            <span>14 July 2002</span>
+                        </p>
+                        <p>
+                            <span><i class="bi bi-caret-right-fill"></i></span>
+                            <span>Phone:</span>
+                            <span>+19 9842357299</span>
+                        </p>
+                        <p>
+                            <span><i class="bi bi-caret-right-fill"></i></span>
+                            <span>Degree:</span>
+                            <span>BCA</span>
+                        </p>
+                        <p>
+                            <span><i class="bi bi-caret-right-fill"></i></span>
+                            <span>Email:</span>
+                            <span>sk.poopoovarasan14@gmail.com</span>
+                        </p>
+                        <p>
+                            <span><i class="bi bi-caret-right-fill"></i></span>
+                            <span>Location:</span>
+                            <span>Villupuram</span>
+                        </p>
+                        <p class="pt-2">
+                            I'm Poovarasan. Pursuing BCA at Thiruvalluvar University in Villupuram. Doing Master in Full Stack Development with AWS course.
+                            See more <a href="">About Me</a>
+                        </p>
+                    </div>
+                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima pariatur error magni possimus laboriosam? Non sit asperiores tenetur impedit! Architecto officia aliquam voluptatibus debitis similique ratione labore fugiat ipsam corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, blanditiis sapiente officiis assumenda animi enim eligendi earum quos fuga, ea fugit voluptates obcaecati iusto! Repellat aperiam cum similique. Ab, incidunt. lo</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End About Me -->
+        
+        <!-- Skils gray -->
+        <div class="row" id="skills">
+            <h1 class="text-center"><span>Skills</span></h1>
+            <div class="container">
+                <div class="row p-lg-3 p-0 mb-lg-3 mb-0">
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label for="">HTML</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label for="">CSS</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row p-lg-3 p-0 mb-lg-3 mb-0">
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label for="">Javascript</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">85%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label for="">Bootstrap</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row p-lg-3 p-0 mb-lg-3 mb-0">
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label for="">PhP</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%">50%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label for="">Java</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 10%">60%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-lg-3 p-0 mb-lg-3 mb-0">
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label for="">Python</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 10%">10%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 pt-lg-0 pt-3">
+                        <label for="">MySql</label>
+                        <div class="progress" role="progressbar" aria-label="Animated striped example">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Skils -->
+
+        <!-- Achievements black -->
+        <div class="row"  id="achievement">
+            <h1 class="nav_title_1"><span>Achievements</span></h1>
+            <div class="col-lg-6 col-12 text-center">
+                <h4 class="text-dark">Certificate at ITVedant</h4>
+                    <p>HTML,CSS And Javascript <a href="" class="text-dark"><i class="bi bi-link-45deg h4"></i></a></p>
+                    <p>Angular <a href="" class="text-dark"><i class="bi bi-link-45deg h4"></i></a></p>
+                    <p>Java <a href="" class="text-dark"><i class="bi bi-link-45deg h4"></i></a></p>
+                    <p>Python <a href="" class="text-dark"><i class="bi bi-link-45deg h4"></i></a></p>
+                    <p>Sql <a href="" class="text-dark"><i class="bi bi-link-45deg h4"></i></a></p>
+            </div>
+            <div class="col-lg-6 col-12 text-center">
+                <h4 class="text-dark">Certificate at YouTube</h4>
+                    <p>HTML And CSS <a href="" class="text-dark"><i class="bi bi-link-45deg h4"></i></a></p>
+            </div>
+        </div>
+        <!-- End Achievements -->
+        
+        
+        <!-- Contact Us gray nd black -->
+        <div class="row text-bg-dark pt-5" id="contact">
+            <h1 class="text-center pb-5" id="nav_title_2"><span>Contact</span></h1>
+            <div class="col-lg-6 col-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.9333654882207!2d79.50890887199273!3d11.984330653515718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5351612db9e8b3%3A0x4e7328d94f6d8614!2sFriends%20Tuition%20Centre!5e1!3m2!1sen!2sin!4v1682743967912!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <form id="myForm" method="post">
+                        <div class="mb-2">
+                            <label class="form-label">Name:</label><br>
+                            <input type="text" class="form-control w-100" name="name" id="name" required>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Email:</label><br>
+                            <input type="email" class="form-control w-100" name="email" id="email" required>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Number:</label><br>
+                            <input type="number" class="form-control w-100" name="number" id="number" required>
+                        </div>
+                        <div class="mb-2">
+                            <label class="form-label">Message:</label><br>
+                            <textarea name="message" class="form-control w-100" id="message" cols="30" rows="7"></textarea>
+                        </div>
+                        <div class="mb-2">
+                            <input type="submit" class="btn btn-outline-primary" id="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Contact Us -->
+        
+        <script>
+            var form = document.getElementById("submit");
+ 
+    form.addEventListener("click", function() {
+     function validateName(name) {
+         // Name should only contain letters and spaces
+         var regex = /^[a-zA-Z\s]+$/;
+         return regex.test(name);
+        }
+        
+        function validateEmail(email) {
+            // Email validation regex
+            var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+        
+        function validateMobileNumber(number) {
+            // Mobile number validation regex
+            var regex = /^[0-9]{10}$/;
+            return regex.test(number);
+        }
+        
+    const username = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const mobileNumber = document.getElementById("number").value;
+      // Example usage:
+      if (!validateName(username)) {
+        console.log("Invalid name!");
+        alert("Invalid name!");
+        username.value=mobileNumber;
+        isValid=false;
+      }
+      
+      if (!validateEmail(email)) {
+        console.log("Invalid email!");
+        alert("Invalid email");
+        email.value=email;
+        isValid=false;
+    
+      }
+      
+      if (!validateMobileNumber(mobileNumber)) {
+        console.log("Invalid mobile number!");
+        alert("Invalid mobile number!");
+        mobileNumber.value=mobileNumber;
+        isValid=false;
+    
+      }
+
+  if (isValid) {
+    alert("Successfully Submited");
+  }
+});
+
+        </script>
+        
+        <!-- Footer -->
+        <div class="row" id="footer">
+            <footer>
+                <a href="" class="p-3">HackerRank</a>|
+                <a href="" class="p-3">LinkedIn</a>
+            </footer>
+        </div>
+        <div class="bg-dark text-light text-center" id="copyright">
+            <span>
+                ©Copyright 2050 by nobody. All rights reserved.
+            </span>
+        </div>
+        <!-- End Footer -->
+
+        
+    </div>
+</body>
+</html>
